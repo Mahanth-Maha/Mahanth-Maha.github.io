@@ -1859,7 +1859,7 @@ input, select, textarea {
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			box-shadow: 0 0 0 2px #21b2a6;
+			box-shadow: 0 0 0 2px #02b7cf;
 		}
 
 	select {
@@ -1956,7 +1956,7 @@ input, select, textarea {
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			box-shadow: 0 0 0 2px #21b2a6;
+			box-shadow: 0 0 0 2px #02b7cf;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2078,15 +2078,15 @@ input, select, textarea {
 			}
 
 		.icon.style1 {
-			color: #00ffcc;
+			color: #002039;
 		}
 
 		.icon.style2 {
-			color: #00f0ff;
+			color: #002039;
 		}
 
 		.icon.style3 {
-			color: #76ddff;
+			color: #002039;
 		}
 
 /* Image */
