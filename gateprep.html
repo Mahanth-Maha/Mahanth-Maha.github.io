@@ -13,6 +13,41 @@
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="assets/css/tailwind.css" />
 	<link href="./src/output.css" rel="stylesheet">
+	<style>
+		/* Custom styles */
+		.faq-item {
+			transition: all 0.3s ease-in-out;
+		}
+
+		.faq-item:not(:last-child) {
+			border-bottom: 1px solid #ddd;
+		}
+
+		.faq-item:hover {
+			background-color: #f7fafc;
+		}
+
+		.faq-answer {
+			max-height: 0;
+			overflow: hidden;
+			transition: all 0.3s ease-in-out;
+		}
+
+		.faq-item.open .faq-answer {
+			max-height: 1000px;
+			/* Adjust this value based on the maximum height of your answer */
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+
+		.arrow {
+			transition: transform 0.3s ease-in-out;
+		}
+
+		.open .arrow {
+			transform: rotate(90deg);
+		}
+	</style>
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
@@ -251,10 +286,15 @@
 										d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
 								</svg>
 							</a>
-							<a class="disabled" href="javascript:void(0)" >
-							<div class="bg-teal-500 hover:bg-teal-600 text-white px-8 py-3 rounded-full shadow-lg transition duration-300 ease-in-out flex items-center focus:outline-none">
-								<span>Strategy to prepare without Coaching: Read below</span>
-								<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m16 17l-4 4m0 0l-4-4m4 4V3"/></svg>
+							<a class="disabled" href="javascript:void(0)">
+								<div
+									class="bg-teal-500 hover:bg-teal-600 text-white px-8 py-3 rounded-full shadow-lg transition duration-300 ease-in-out flex items-center focus:outline-none">
+									<span>Strategy to prepare without Coaching: Read below</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+										viewBox="0 0 24 24">
+										<path fill="none" stroke="currentColor" stroke-linecap="round"
+											stroke-linejoin="round" stroke-width="4" d="m16 17l-4 4m0 0l-4-4m4 4V3" />
+									</svg>
 								</div>
 							</a>
 						</div>
@@ -689,7 +729,12 @@
 									<h2 class="py-8 px-4"> Standard BOOKS</h2>
 									<hr>
 									<br>
-									<p> It is suggested to search for e-copy of these books, you can find it online <span class="font-semibold text-orange-400"> ( IYKYK )</span>. first search it, if you can't find or want a physical copy then buy it from amazon or some other platform. on other hand, you can pretty much find these in College/nearby library.</p>
+									<p> It is suggested to search for e-copy of these books, you can find it online
+										<span class="font-semibold text-orange-400"> ( IYKYK )</span>. first search it,
+										if you can't find or want a physical copy then buy it from amazon or some other
+										platform. on other hand, you can pretty much find these in College/nearby
+										library.
+									</p>
 									<div class="container mx-auto px-4 py-8">
 										<h1 class="text-3xl font-bold mb-8">GATE CSE Suggested Books</h1>
 										<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -862,102 +907,172 @@
 									<h2 class="py-8 px-4"> Suggested YouTube Playlists</h2>
 									<hr>
 									<br>
-									<p> First most priority should be given to NPTEL and MIT videos, trust me these cover everthing , but yes I agree they are boring but you can watch them on 2.0x speed which makes it even smaller course. </p>
+									<p> First most priority should be given to NPTEL and MIT videos, trust me these
+										cover everthing , but yes I agree they are boring but you can watch them on 2.0x
+										speed which makes it even smaller course. </p>
 									<br>
-									<p> For context , in goclasses each course is around atleast 90-120 hrs on avg, on the other side NPTEL has around 30-45 hrs on Avg per, which is smaller, with covering all topics required with no misconceptions and correct concepts are assured. now watching these on 2.0x make the courses on avg 20-30 hrs only which is watchable. but the goclasses make it a bit easier by gathering all courses and provides annotated notes and screenshots from standard books and all video lectures avaliable on that topic , say if there are 3-4 courses on same subject by different iits and universities , they will gather 2-3 course material and teach them with the standard questions and homework questions in that course, which is an advantage over coaching, but still if you can watch more , you can and at the end concept is same in both cases.  </p>
+									<p> For context , in goclasses each course is around atleast 90-120 hrs on avg, on
+										the other side NPTEL has around 30-45 hrs on Avg per, which is smaller, with
+										covering all topics required with no misconceptions and correct concepts are
+										assured. now watching these on 2.0x make the courses on avg 20-30 hrs only which
+										is watchable. but the goclasses make it a bit easier by gathering all courses
+										and provides annotated notes and screenshots from standard books and all video
+										lectures avaliable on that topic , say if there are 3-4 courses on same subject
+										by different iits and universities , they will gather 2-3 course material and
+										teach them with the standard questions and homework questions in that course,
+										which is an advantage over coaching, but still if you can watch more , you can
+										and at the end concept is same in both cases. </p>
 									<br>
-									
+
 									<div class="container mx-auto px-4 py-8">
 										<h1 class="text-3xl font-bold mb-8">GATE CSE Recommended YouTube Playlists</h1>
-								
+
 										<!-- Discrete Mathematics -->
 										<h2 class="text-xl font-bold mb-4">Discrete Mathematics</h2>
 										<ul class="list-disc list-inside text-sm text-gray-700">
-											<li><a href="https://onlinecourses.nptel.ac.in/noc20_cs82/preview" target="_blank" class="text-blue-500 hover:underline">NPTEL Discrete Mathematics by Krishnamurthy Iyer (IIT Madras)</a></li>
-											<li><a href="https://support.khanacademy.org/hc/en-us/community/posts/201470924-Discrete-Mathematics" target="_blank" class="text-blue-500 hover:underline">Khan Academy Discrete Math</a></li>
+											<li><a href="https://onlinecourses.nptel.ac.in/noc20_cs82/preview"
+													target="_blank" class="text-blue-500 hover:underline">NPTEL Discrete
+													Mathematics by Krishnamurthy Iyer (IIT Madras)</a></li>
+											<li><a href="https://support.khanacademy.org/hc/en-us/community/posts/201470924-Discrete-Mathematics"
+													target="_blank" class="text-blue-500 hover:underline">Khan Academy
+													Discrete Math</a></li>
 										</ul>
-								
+
 										<!-- Engineering Mathematics -->
 										<h2 class="text-xl font-bold mb-4 mt-8">Engineering Mathematics</h2>
 										<ul class="list-disc list-inside text-sm text-gray-700">
-											<li><a href="https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/" target="_blank" class="text-blue-500 hover:underline">NPTEL Linear Algebra by Gilbert Strang (MIT)</a></li>
-											<li><a href="https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/" target="_blank" class="text-blue-500 hover:underline">MIT OpenCourseware - Multivariable Calculus (18.02)</a></li>
-											<li><a href="https://www.khanacademy.org/math/multivariable-calculus" target="_blank" class="text-blue-500 hover:underline">Khan Academy Multivariable Calculus</a></li>
+											<li><a href="https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/"
+													target="_blank" class="text-blue-500 hover:underline">NPTEL Linear
+													Algebra by Gilbert Strang (MIT)</a></li>
+											<li><a href="https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/"
+													target="_blank" class="text-blue-500 hover:underline">MIT
+													OpenCourseware - Multivariable Calculus (18.02)</a></li>
+											<li><a href="https://www.khanacademy.org/math/multivariable-calculus"
+													target="_blank" class="text-blue-500 hover:underline">Khan Academy
+													Multivariable Calculus</a></li>
 										</ul>
-								
+
 										<!-- Digital Logic -->
 										<h2 class="text-xl font-bold mb-4 mt-8">Digital Logic</h2>
 										<ul class="list-disc list-inside text-sm text-gray-700">
-											<li><a href="https://nptel.ac.in/courses" target="_blank" class="text-blue-500 hover:underline">NPTEL Digital Logic Design by Debapratim Das (IIT Kharagpur)</a></li>
-											<li><a href="https://www.youtube.com/watch?v=lumpHzyakVs" target="_blank" class="text-blue-500 hover:underline">Crash Course Computer Science - Digital Logic by Crash Course</a></li>
+											<li><a href="https://nptel.ac.in/courses" target="_blank"
+													class="text-blue-500 hover:underline">NPTEL Digital Logic Design by
+													Debapratim Das (IIT Kharagpur)</a></li>
+											<li><a href="https://www.youtube.com/watch?v=lumpHzyakVs" target="_blank"
+													class="text-blue-500 hover:underline">Crash Course Computer Science
+													- Digital Logic by Crash Course</a></li>
 										</ul>
-								
+
 										<!-- Computer Organization and Architecture -->
-										<h2 class="text-xl font-bold mb-4 mt-8">Computer Organization and Architecture</h2>
+										<h2 class="text-xl font-bold mb-4 mt-8">Computer Organization and Architecture
+										</h2>
 										<ul class="list-disc list-inside text-sm text-gray-700">
-											<li><a href="https://archive.nptel.ac.in/courses/106/105/106105163/" target="_blank" class="text-blue-500 hover:underline">NPTEL Computer Architecture by P. V. Sankar (IIT Delhi)</a></li>
-											<li><a href="https://www.youtube.com/playlist?list=PLEAYkSg4uSQ33jY4raAXvUT7Bm_S_EGu0" target="_blank" class="text-blue-500 hover:underline">University of Washington - Introduction to Computer Science and Systems (CSE 143)</a></li>
+											<li><a href="https://archive.nptel.ac.in/courses/106/105/106105163/"
+													target="_blank" class="text-blue-500 hover:underline">NPTEL Computer
+													Architecture by P. V. Sankar (IIT Delhi)</a></li>
+											<li><a href="https://www.youtube.com/playlist?list=PLEAYkSg4uSQ33jY4raAXvUT7Bm_S_EGu0"
+													target="_blank" class="text-blue-500 hover:underline">University of
+													Washington - Introduction to Computer Science and Systems (CSE
+													143)</a></li>
 										</ul>
-								
+
 										<!-- C Programming -->
 										<h2 class="text-xl font-bold mb-4 mt-8">C Programming</h2>
 										<ul class="list-disc list-inside text-sm text-gray-700">
-											<li><a href="https://www.edx.org/learn/computer-science/harvard-university-cs50-s-introduction-to-computer-science" target="_blank" class="text-blue-500 hover:underline">CS50's Introduction to Computer Science by Harvard University</a></li>
-											<li><a href="https://www.freecodecamp.org/news/the-c-beginners-handbook/" target="_blank" class="text-blue-500 hover:underline">freeCodeCamp.org - Learn C Programming</a></li>
+											<li><a href="https://www.edx.org/learn/computer-science/harvard-university-cs50-s-introduction-to-computer-science"
+													target="_blank" class="text-blue-500 hover:underline">CS50's
+													Introduction to Computer Science by Harvard University</a></li>
+											<li><a href="https://www.freecodecamp.org/news/the-c-beginners-handbook/"
+													target="_blank"
+													class="text-blue-500 hover:underline">freeCodeCamp.org - Learn C
+													Programming</a></li>
 										</ul>
-								
+
 										<!-- Data Structures -->
 										<h2 class="text-xl font-bold mb-4 mt-8">Data Structures</h2>
 										<ul class="list-disc list-inside text-sm text-gray-700">
-											<li><a href="https://nptel.ac.in/courses/106102064" target="_blank" class="text-blue-500 hover:underline">NPTEL Programming and Data Structures by Naveen Garg (IIT Delhi)</a></li>
-											<li><a href="https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/" target="_blank" class="text-blue-500 hover:underline">Introduction to Algorithms (MIT 6.006) by MIT OpenCourseware</a></li>
+											<li><a href="https://nptel.ac.in/courses/106102064" target="_blank"
+													class="text-blue-500 hover:underline">NPTEL Programming and Data
+													Structures by Naveen Garg (IIT Delhi)</a></li>
+											<li><a href="https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"
+													target="_blank" class="text-blue-500 hover:underline">Introduction
+													to Algorithms (MIT 6.006) by MIT OpenCourseware</a></li>
 										</ul>
-								
+
 										<!-- Algorithms -->
 										<h2 class="text-xl font-bold mb-4 mt-8">Algorithms</h2>
 										<ul class="list-disc list-inside text-sm text-gray-700">
-											<li><a href="https://onlinecourses.nptel.ac.in/noc19_cs47/preview" target="_blank" class="text-blue-500 hover:underline">NPTEL Design and Analysis of Algorithms by Naveen Garg (IIT Delhi)</a></li>
-											<li><a href="https://www.coursera.org/learn/algorithms-part1" target="_blank" class="text-blue-500 hover:underline">Princeton Algorithms by Robert Sedgewick and Kevin Wayne</a></li>
+											<li><a href="https://onlinecourses.nptel.ac.in/noc19_cs47/preview"
+													target="_blank" class="text-blue-500 hover:underline">NPTEL Design
+													and Analysis of Algorithms by Naveen Garg (IIT Delhi)</a></li>
+											<li><a href="https://www.coursera.org/learn/algorithms-part1"
+													target="_blank" class="text-blue-500 hover:underline">Princeton
+													Algorithms by Robert Sedgewick and Kevin Wayne</a></li>
 										</ul>
-								
+
 										<!-- Theory of Computation -->
 										<h2 class="text-xl font-bold mb-4 mt-8">Theory of Computation</h2>
 										<ul class="list-disc list-inside text-sm text-gray-700">
-											<li><a href="https://archive.nptel.ac.in/courses/106/106/106106049/" target="_blank" class="text-blue-500 hover:underline">NPTEL Introduction to Automata Theory by Debapratim Das (IIT Kharagpur)</a></li>
-											<li><a href="https://www.youtube.com/playlist?list=PLEAYkSg4uSQ33jY4raAXvUT7Bm_S_EGu0" target="_blank" class="text-blue-500 hover:underline">Stanford University - Introduction to Automata Theory (CS154)</a></li>
+											<li><a href="https://archive.nptel.ac.in/courses/106/106/106106049/"
+													target="_blank" class="text-blue-500 hover:underline">NPTEL
+													Introduction to Automata Theory by Debapratim Das (IIT
+													Kharagpur)</a></li>
+											<li><a href="https://www.youtube.com/playlist?list=PLEAYkSg4uSQ33jY4raAXvUT7Bm_S_EGu0"
+													target="_blank" class="text-blue-500 hover:underline">Stanford
+													University - Introduction to Automata Theory (CS154)</a></li>
 										</ul>
-								
+
 										<!-- Compiler Design -->
 										<h2 class="text-xl font-bold mb-4 mt-8">Compiler Design</h2>
 										<ul class="list-disc list-inside text-sm text-gray-700">
-											<li><a href="https://nptel.ac.in/courses/106105190" target="_blank" class="text-blue-500 hover:underline">NPTEL Compiler Design by Santanu Paul (IIT Kharagpur)</a></li>
-											<li><a href="https://www.youtube.com/playlist?list=PLVgfFBQ86j1Oy2mqN8QpxEsfxXN9S_WGl" target="_blank" class="text-blue-500 hover:underline">University of California, Berkeley - Compilers (CS157)</a></li>
+											<li><a href="https://nptel.ac.in/courses/106105190" target="_blank"
+													class="text-blue-500 hover:underline">NPTEL Compiler Design by
+													Santanu Paul (IIT Kharagpur)</a></li>
+											<li><a href="https://www.youtube.com/playlist?list=PLVgfFBQ86j1Oy2mqN8QpxEsfxXN9S_WGl"
+													target="_blank" class="text-blue-500 hover:underline">University of
+													California, Berkeley - Compilers (CS157)</a></li>
 										</ul>
-								
+
 										<!-- Operating Systems -->
 										<h2 class="text-xl font-bold mb-4 mt-8">Operating Systems</h2>
 										<ul class="list-disc list-inside text-sm text-gray-700">
-											<li><a href="https://nptel.ac.in/" target="_blank" class="text-blue-500 hover:underline">NPTEL Operating Systems by Krishna Kant (IIT Delhi)</a></li>
-											<li><a href="https://pdos.csail.mit.edu/6.1810/" target="_blank" class="text-blue-500 hover:underline">MIT OpenCourseware - Operating Systems Engineering (6.S162)</a></li>
+											<li><a href="https://nptel.ac.in/" target="_blank"
+													class="text-blue-500 hover:underline">NPTEL Operating Systems by
+													Krishna Kant (IIT Delhi)</a></li>
+											<li><a href="https://pdos.csail.mit.edu/6.1810/" target="_blank"
+													class="text-blue-500 hover:underline">MIT OpenCourseware - Operating
+													Systems Engineering (6.S162)</a></li>
 										</ul>
-								
+
 										<!-- Database Management Systems -->
 										<h2 class="text-xl font-bold mb-4 mt-8">Database Management Systems</h2>
 										<ul class="list-disc list-inside text-sm text-gray-700">
-											<li><a href="https://onlinecourses.nptel.ac.in/noc22_cs91/preview" target="_blank" class="text-blue-500 hover:underline">NPTEL Database Management System by P. K. Gupta (IIT Delhi)</a></li>
-											<li><a href="https://www.youtube.com/watch?v=j-iq40QBJy8" target="_blank" class="text-blue-500 hover:underline">University of California, Berkeley - Introduction to Databases (CS186)</a></li>
+											<li><a href="https://onlinecourses.nptel.ac.in/noc22_cs91/preview"
+													target="_blank" class="text-blue-500 hover:underline">NPTEL Database
+													Management System by P. K. Gupta (IIT Delhi)</a></li>
+											<li><a href="https://www.youtube.com/watch?v=j-iq40QBJy8" target="_blank"
+													class="text-blue-500 hover:underline">University of California,
+													Berkeley - Introduction to Databases (CS186)</a></li>
 										</ul>
-								
+
 										<!-- Computer Networks -->
 										<h2 class="text-xl font-bold mb-4 mt-8">Computer Networks</h2>
 										<ul class="list-disc list-inside text-sm text-gray-700">
-											<li><a href="https://nptel.ac.in/courses/106106091" target="_blank" class="text-blue-500 hover:underline">NPTEL Computer Networks by Bhargava and Devesh Agarwal (IIT Kanpur)</a></li>
-											<li><a href="https://www.youtube.com/playlist?list=PLEAYkSg4uSQ33jY4raAXvUT7Bm_S_EGu0" target="_blank" class="text-blue-500 hover:underline">Georgia Tech - Computer Networking (CS 6461)</a></li>
+											<li><a href="https://nptel.ac.in/courses/106106091" target="_blank"
+													class="text-blue-500 hover:underline">NPTEL Computer Networks by
+													Bhargava and Devesh Agarwal (IIT Kanpur)</a></li>
+											<li><a href="https://www.youtube.com/playlist?list=PLEAYkSg4uSQ33jY4raAXvUT7Bm_S_EGu0"
+													target="_blank" class="text-blue-500 hover:underline">Georgia Tech -
+													Computer Networking (CS 6461)</a></li>
 										</ul>
 									</div>
 									<br>
 									<br>
-									<p> NOTE : courses in youtube are older by Ravindrababu Ravula and GATE SMASHERS, and also I personally found mistakes in classes, so please refer to books after each topic and cross check your understanding and their teaching if you want to follow those courses. watch the misconceptions playlist in goclasses youtube channel for some mistakes which are corrected by them.   </p>
+									<p> NOTE : courses in youtube are older by Ravindrababu Ravula and GATE SMASHERS,
+										and also I personally found mistakes in classes, so please refer to books after
+										each topic and cross check your understanding and their teaching if you want to
+										follow those courses. watch the misconceptions playlist in goclasses youtube
+										channel for some mistakes which are corrected by them. </p>
 									<br>
 									<br>
 									<p> Watch these only if you cant understand NPTEL videos</p>
@@ -1166,35 +1281,119 @@
 									</div>
 								</div>
 							</div>
+							<!-- <section class="bg-[#1D1D1D] text-gray-100 py-32 min-h-screen"> -->
+							<div class="container  justify-center p-4 mx-auto md:p-8">
+								<h2 class="mb-12 text-4xl font-bold leadi text-center sm:text-5xl">Frequently Asked
+									Questions</h2>
+								<div class=" divide-y sm:px-8 lg:px-12 xl:px-32 divide-gray-700">
+									<details>
+										<summary class="py-2 outline-none cursor-pointer focus:underline">I am in first
+											year, should i start preparation?</summary>
+										<div class="px-4 pb-4">
+											<p>Honestly, its too early. still you can consider learning mathermatics,
+												enroll in DM, EM, C Programming free course in Goclasses and start
+												learning them and after matering them slowly, you will be ready for DSA
+												and so on. </p>
+										</div>
+									</details>
+									<details>
+										<summary class="py-2 outline-none cursor-pointer focus:underline">Can I crack
+											gate while I am doing a job parallely ?</summary>
+										<div class="px-4 pb-4">
+											<p>Yes. you can see the Harish interview in above mentioned interviews. he
+												cracked gate with job as AIR 6, so anyone can crack gate if enough time
+												spent in and did some practice in breaks while in office.</p>
+										</div>
+									</details>
+									<details>
+										<summary class="py-2 outline-none cursor-pointer focus:underline">Should I take
+											a drop ?</summary>
+										<div class="px-4 pb-4">
+											<p>It depends. If you are financially good, you can take a drop, but if you
+												got a good rank already and gets any top IITs (B,M,D,K,KGP,R,G,H) or any
+												top NIT or any good reputated College for that matter, you can take it
+												without going for a drop. just make sure you wont regret the drop once
+												you have taken it.</p>
+										</div>
+									</details>
+									<details>
+										<summary class="py-2 outline-none cursor-pointer focus:underline">Why should I
+											trust you? to take goclasses than PW course is less in price.</summary>
+										<div class="px-4 pb-4">
+											<p>I am not forcing you to take GO Classes over PW, but what I fell is GO
+												Classes is the best of all coachings out there currently, most of the
+												toppers do agree with me and you can see their records in ranks this and
+												previous year. I am not saying to take it since they generated ranks,
+												rather try thier <a
+													herf="https://www.goclasses.in/courses/Discrete-Mathematics-Course-63f9aa9be4b0a8a370cfb0ad?affCode=R1LF5P">DM</a>,
+												<a
+													href="https://www.goclasses.in/courses/Engineering-Mathematics-60fdd8530cf2c7989e1f109d?affCode=R1LF5P">EM</a>
+												and <a
+													href="https://www.goclasses.in/courses/C-Programming-621a02a60cf242311be950a4?affCode=R1LF5P">
+													C Programming </a> Free courses before buying original and decide if
+												you are really understanding it. </p>
+										</div>
+									</details>
+								</div>
+							</div>
+							<!-- </section> -->
+							<br>
+							<br>
+							<br>
+							<div class="flex justify-center">
+								<iframe
+									src="https://docs.google.com/forms/d/e/1FAIpQLSdKWXHE2mao-aJgX14QhX5X23F0s6oa0jHj40_evZofvTjo1A/viewform?embedded=true"
+									width="640" height="1287" frameborder="0" marginheight="0"
+									marginwidth="0">Loading…</iframe>
+							</div>
+							<br>
+							<br>
+							<div class="flex justify-center">
+								<a href="https://docs.google.com/forms/d/e/1FAIpQLSdKWXHE2mao-aJgX14QhX5X23F0s6oa0jHj40_evZofvTjo1A/viewform?usp=sf_link"
+									class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded transition duration-300 ease-in-out">
+									Open Form in other page
+								</a>
+							</div>
+							<br>
+							<br>
+							<div class="flex justify-center">
+								<p> Your question will be answered in the FAQ section soon.</p>
+							</div>
 
 			</section>
-			
+
 			<!-- Footer -->
 			<footer id="footer">
-					<div class="container mx-auto flex justify-center items-center">
-					  <div class="text-center space-y-4">
+				<div class="container mx-auto flex justify-center items-center">
+					<div class="text-center space-y-4">
 						<h2 class="text-3xl font-bold animate-pulse">Connect with me!</h2>
 						<p class="text-xl opacity-75">Let's collaborate, chat, or learn from each other.</p>
 						<div class="flex justify-center space-x-4">
-						  <a href="https://www.linkedin.com/in/mahanth-maha/" target="_blank" class="group hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-							<i class="fab fa-linkedin text-2xl group-hover:scale-110 transition duration-300 ease-in-out"></i>
-							<span class="ml-2 hidden group-hover:block">LinkedIn</span>
-						  </a>
-						  <a href="https://www.github.com/mahanth-maha" target="_blank" class="group hover:text-green-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
-							<i class="fab fa-github text-2xl group-hover:scale-110 transition duration-300 ease-in-out"></i>
-							<span class="ml-2 hidden group-hover:block">GitHub</span>
-						  </a>
-						  <a href="mailto:mahanth@duck.com" class="group hover:text-purple-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500">
-							<i class="fas fa-envelope text-2xl group-hover:scale-110 transition duration-300 ease-in-out"></i>
-							<span class="ml-2 hidden group-hover:block">Email</span>
-						  </a>
-						  </div>
-					  </div>
+							<a href="https://www.linkedin.com/in/mahanth-maha/" target="_blank"
+								class="group hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+								<i
+									class="fab fa-linkedin text-2xl group-hover:scale-110 transition duration-300 ease-in-out"></i>
+								<span class="ml-2 hidden group-hover:block">LinkedIn</span>
+							</a>
+							<a href="https://www.github.com/mahanth-maha" target="_blank"
+								class="group hover:text-green-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+								<i
+									class="fab fa-github text-2xl group-hover:scale-110 transition duration-300 ease-in-out"></i>
+								<span class="ml-2 hidden group-hover:block">GitHub</span>
+							</a>
+							<a href="mailto:mahanth@duck.com"
+								class="group hover:text-purple-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500">
+								<i
+									class="fas fa-envelope text-2xl group-hover:scale-110 transition duration-300 ease-in-out"></i>
+								<span class="ml-2 hidden group-hover:block">Email</span>
+							</a>
+						</div>
 					</div>
+				</div>
 				<ul class="copyright">
 					<li>&copy; MAHA</li>
 				</ul>
-			</footer> 
+			</footer>
 		</article>
 
 	</div>
@@ -1207,7 +1406,6 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
-
 </body>
 
 </html>
