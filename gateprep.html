@@ -14,40 +14,14 @@
 	<link rel="stylesheet" href="assets/css/tailwind.css" />
 	<link href="./src/output.css" rel="stylesheet">
 	<style>
-		/* Custom styles */
-		.faq-item {
-			transition: all 0.3s ease-in-out;
+		.attribution {
+		  font-size: 13px;
+		  text-align: center;
 		}
-
-		.faq-item:not(:last-child) {
-			border-bottom: 1px solid #ddd;
+		.attribution a {
+		  color: hsl(228, 45%, 44%);
 		}
-
-		.faq-item:hover {
-			background-color: #f7fafc;
-		}
-
-		.faq-answer {
-			max-height: 0;
-			overflow: hidden;
-			transition: all 0.3s ease-in-out;
-		}
-
-		.faq-item.open .faq-answer {
-			max-height: 1000px;
-			/* Adjust this value based on the maximum height of your answer */
-			padding-top: 10px;
-			padding-bottom: 10px;
-		}
-
-		.arrow {
-			transition: transform 0.3s ease-in-out;
-		}
-
-		.open .arrow {
-			transform: rotate(90deg);
-		}
-	</style>
+	  </style>
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
@@ -85,11 +59,14 @@
 				<h2>GATE Preparation</h2>
 				<p>Plan, Tips and Strategy</p>
 			</header>
-
-
+			
+			
 			<section class="wrapper style5">
 				<div class="inner">
-
+					<p>(Page Designed for Desktop, best to view in Desktop Mode)</p>
+					<br>
+					<br>
+					<br>
 					<h3 class="font-bold"> GATE CSE </h3>
 					<p> Here I would discuss about the Preparation tips and tricks for GATE CSE. Compiling all resources
 						please be with patience </p>
@@ -417,6 +394,63 @@
 										</div>
 									</div>
 								</div>
+								<!-- 
+								<div>
+									<br>
+									<h2 class="py-8 px-4"> Suggestions from my Friends</h2>
+									<hr>
+									<br>
+									<div class="container mx-auto max-w-10-xl p-2 md:p-10">
+										
+									
+										  <div class="p-10 rounded-xl bg-gray-100/75 md:col-span-2">
+									
+											<div class="flex space-x-4">
+											  <img
+												src="images/people-female.png"
+												alt="Anshikha"
+												class="w-16 h-16 rounded-full ring-2 ring-cyan-500" />
+											  <div class="text-lg">
+												<h4 class="text-gray-100" >Anshikha Modi</h4>
+												<p class="opacity-50 text-gray-900">AIR 21 GATE 2024</p>
+											  </div>
+											</div>
+											<p class="mt-6 opacity-75 text-xl text-gray-900">
+											  blah blah blah
+											</p>
+								  
+											<p class="mt-6 opacity-50 text-gray-900">
+											  "GATE blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah "
+											</p>
+										  </div>
+									  </div>	
+									  <div class="container mx-auto max-w-10-xl p-2 md:p-10">
+										
+									
+										<div class="p-10 rounded-xl bg-gray-100/75 md:col-span-2">
+									
+										  <div class="flex space-x-4">
+											<img
+											  src="images/people-male.png"
+											  alt="MAHA"
+											  class="w-16 h-16 rounded-full ring-2 ring-cyan-500" />
+											<div class="text-lg">
+											  <h4 class="text-gray-100" >Mahanth Yalla</h4>
+											  <p class="opacity-50 text-gray-900">AIR 24 GATE 2024</p>
+											</div>
+										  </div>
+										  <p class="mt-6 opacity-75 text-xl text-gray-900">
+											Focusing on concepts rather than on marks helped me a lot
+										  </p>
+								
+										  <p class="mt-6 opacity-50 text-gray-900">
+											"Revision is the most important thing in gate preparation, I regretted it too much at the end of my preparation, learn from my mistake, revise daily and weekly. The more you revise the less your rank gets."
+										  </p>
+										</div>
+									</div>	  
+									<br>
+								</div>
+								 -->
 								<div>
 									<br>
 									<h2 class="py-8 px-4"> GATE Subject wise weightage</h2>
@@ -743,9 +777,9 @@
 												<div class="p-6">
 													<h2 class="text-xl font-bold mb-4">Engineering Mathematics</h2>
 													<ul class="list-disc list-inside text-sm text-gray-700">
-														<li>R.K. Kanodia</li>
-														<li>Erwin Kreyszig</li>
-														<li>B.S. Grewal</li>
+														<li><span class="font-semibold">Linear Algebra </span> and Its Applications - by David C Lay Steven R Lay Judi J McDonald</li>
+														<li>A First Course in <span class="font-semibold">Probability</span> - by Sheldon M. Ross </li>
+														<li><span class="font-semibold"> (Calculus)</span> Mathematical Analysis A Straightforward Approach - by Binmore K.G.</li>
 													</ul>
 												</div>
 											</div>
@@ -754,7 +788,8 @@
 												<div class="p-6">
 													<h2 class="text-xl font-bold mb-4">Discrete Mathematics</h2>
 													<ul class="list-disc list-inside text-sm text-gray-700">
-														<li>Discrete Mathematics : Kenethen Rosen</li>
+														<li>Discrete Mathematics and Its Applications - by Kenneth Rosen</li>
+														<li>Discrete Mathematics and Its Applications by Kenneth Rosen</li>
 													</ul>
 												</div>
 											</div>
@@ -763,9 +798,9 @@
 												<div class="p-6">
 													<h2 class="text-xl font-bold mb-4">C Programming</h2>
 													<ul class="list-disc list-inside text-sm text-gray-700">
-														<li>ANSI C : Denis Ritche</li>
-														<li>Let Us C by Yashavant Kanetkar</li>
-														<li>C Programming: A Modern Approach by K.N. King</li>
+														<li>* ANSI C - by Kernighan, Dennis Ritchie 2e</li>
+														<li> Let Us C - by Yashavant Kanetkar</li>
+														
 													</ul>
 												</div>
 											</div>
@@ -774,9 +809,9 @@
 												<div class="p-6">
 													<h2 class="text-xl font-bold mb-4">Data Structures</h2>
 													<ul class="list-disc list-inside text-sm text-gray-700">
-														<li>Data Structures and Algorithms Made Easy by Narasimha
-															Karumanchi</li>
-														<li>Data Structures and Algorithms by Alfred V. Aho</li>
+														<li>* Ellis Horowitz, Sahni DS in C</li>
+														<li>* Data Structures and Algorithms by Alfred V. Aho</li>
+														<li>Data Structures and Algorithms Made Easy by Narasimha Karumanchi</li>
 													</ul>
 												</div>
 											</div>
@@ -785,7 +820,7 @@
 												<div class="p-6">
 													<h2 class="text-xl font-bold mb-4">Algorithms</h2>
 													<ul class="list-disc list-inside text-sm text-gray-700">
-														<li>Introduction to Algorithms by Thomas H. Cormen</li>
+														<li> * Introduction to Algorithms by Thomas H. Cormen (CLRS)</li>
 														<li>The Algorithm Design Manual by Steven S. Skiena</li>
 														<li>Algorithms by Robert Sedgewick and Kevin Wayne</li>
 													</ul>
@@ -797,12 +832,8 @@
 												<div class="p-6">
 													<h2 class="text-xl font-bold mb-4">Database Management System</h2>
 													<ul class="list-disc list-inside text-sm text-gray-700">
-														<li>Database System Concepts by Abraham Silberschatz, Henry F.
-															Korth, S. Sudarshan</li>
-														<li>Fundamentals of Database Systems by Ramez Elmasri, Shamkant
-															B. Navathe</li>
-														<li>Database Management Systems by Raghu Ramakrishnan, Johannes
-															Gehrke</li>
+														<li>* Fundamentals of Database Systems - by Ramez Elmasri, Shamkant	B. Navathe</li>
+														<li>Database Management Systems by Raghu Ramakrishnan, Johannes Gehrke</li>
 													</ul>
 												</div>
 											</div>
@@ -812,10 +843,8 @@
 												<div class="p-6">
 													<h2 class="text-xl font-bold mb-4">Digital Logic</h2>
 													<ul class="list-disc list-inside text-sm text-gray-700">
-														<li>Digital Design by M. Morris Mano, Michael D. Ciletti</li>
-														<li>Fundamentals of Digital Logic with Verilog Design by Stephen
-															Brown, Zvonko Vranesic</li>
-														<li>Digital Logic and Computer Design by M. Morris Mano</li>
+														<li>* Digital Design by M. Morris Mano, Michael D. Ciletti</li>
+														<li>Fundamentals of Digital Logic with Verilog Design by Stephen Brown, Zvonko Vranesic</li>
 													</ul>
 												</div>
 											</div>
@@ -826,10 +855,8 @@
 													<h2 class="text-xl font-bold mb-4">Computer Organization and
 														Architecture</h2>
 													<ul class="list-disc list-inside text-sm text-gray-700">
-														<li>Computer Organization and Design by David A. Patterson, John
-															L. Hennessy</li>
-														<li>Computer Systems: A Programmer's Perspective by Randal E.
-															Bryant, David R. O'Hallaron</li>
+														<li>Computer Organization and Design by David A. Patterson, John L. Hennessy</li>
+														<li>Computer Systems: A Programmer's Perspective by Randal E.Bryant, David R. O'Hallaron</li>
 														<li>Structured Computer Organization by Andrew S. Tanenbaum</li>
 													</ul>
 												</div>
@@ -840,12 +867,10 @@
 												<div class="p-6">
 													<h2 class="text-xl font-bold mb-4">Operating Systems</h2>
 													<ul class="list-disc list-inside text-sm text-gray-700">
-														<li>Operating System Concepts by Abraham Silberschatz, Peter
-															Baer Galvin, Greg Gagne</li>
-														<li>Modern Operating Systems by Andrew S. Tanenbaum, Herbert Bos
+														<li> * Operating System Concepts - by Abraham Silberschatz, Peter Baer Galvin, Greg Gagne</li>
+														<li> * Modern Operating Systems - by Andrew S. Tanenbaum, Herbert Bos
 														</li>
-														<li>Operating Systems: Internals and Design Principles by
-															William Stallings</li>
+														<li>Operating Systems: Internals and Design Principles - by William Stallings</li>
 													</ul>
 												</div>
 											</div>
@@ -855,7 +880,7 @@
 												<div class="p-6">
 													<h2 class="text-xl font-bold mb-4">Theory of Computation</h2>
 													<ul class="list-disc list-inside text-sm text-gray-700">
-														<li>Introduction to the Theory of Computation by Michael Sipser
+														<li>* Introduction to the Theory of Computation by Michael Sipser
 														</li>
 														<li>The Theory of Computation by Dexter C. Kozen</li>
 														<li>Automata, Computability and Complexity: Theory and
@@ -869,8 +894,8 @@
 												<div class="p-6">
 													<h2 class="text-xl font-bold mb-4">Compiler Design</h2>
 													<ul class="list-disc list-inside text-sm text-gray-700">
-														<li>Compilers: Principles, Techniques, and Tools by Alfred V.
-															Aho, Ravi Sethi, Jeffrey D. Ullman</li>
+														<li>* Compilers: Principles, Techniques, and Tools by Alfred V.
+															<span class="font-semibold">Aho</span>, Ravi Sethi, Jeffrey D. Ullman</li>
 														<li>Engineering a Compiler by Keith D. Cooper, Linda Torczon
 														</li>
 														<li>Modern Compiler Implementation in C/Java/ML by Andrew W.
@@ -884,23 +909,18 @@
 												<div class="p-6">
 													<h2 class="text-xl font-bold mb-4">Computer Networks</h2>
 													<ul class="list-disc list-inside text-sm text-gray-700">
-														<li>Computer Networking: A Top-Down Approach by James F. Kurose,
-															Keith W. Ross</li>
-														<li>Computer Networks by Andrew S. Tanenbaum, David J. Wetherall
+														<li> * Computer Networks by Andrew S. Tanenbaum, David J. Wetherall
 														</li>
-														<li>Data Communications and Networking by Behrouz A. Forouzan
+														<li> * Data Communications and Networking by Behrouz A. Forouzan
 														</li>
+														<li>Computer Networking: A Top-Down Approach by James F. Kurose, Keith W. Ross</li>
 													</ul>
 												</div>
 											</div>
-
-
-
-
 										</div>
 									</div>
 									<br>
-
+									* : Indicates most preferred and reliable source that I followed in my gate preparation.
 								</div>
 								<div class="container mx-auto px-4 py-8">
 									<br>
@@ -908,17 +928,17 @@
 									<hr>
 									<br>
 									<p> First most priority should be given to NPTEL and MIT videos, trust me these
-										cover everthing , but yes I agree they are boring but you can watch them on 2.0x
+										cover everything , but yes I agree they are boring but you can watch them on 2.0x
 										speed which makes it even smaller course. </p>
 									<br>
-									<p> For context , in goclasses each course is around atleast 90-120 hrs on avg, on
+									<p> For context , in goclasses each course is around at least 90-120 hrs on avg, on
 										the other side NPTEL has around 30-45 hrs on Avg per, which is smaller, with
 										covering all topics required with no misconceptions and correct concepts are
 										assured. now watching these on 2.0x make the courses on avg 20-30 hrs only which
 										is watchable. but the goclasses make it a bit easier by gathering all courses
 										and provides annotated notes and screenshots from standard books and all video
-										lectures avaliable on that topic , say if there are 3-4 courses on same subject
-										by different iits and universities , they will gather 2-3 course material and
+										lectures available on that topic , say if there are 3-4 courses on same subject
+										by different IITs and universities , they will gather 2-3 course material and
 										teach them with the standard questions and homework questions in that course,
 										which is an advantage over coaching, but still if you can watch more , you can
 										and at the end concept is same in both cases. </p>
@@ -941,15 +961,35 @@
 										<!-- Engineering Mathematics -->
 										<h2 class="text-xl font-bold mb-4 mt-8">Engineering Mathematics</h2>
 										<ul class="list-disc list-inside text-sm text-gray-700">
-											<li><a href="https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/"
-													target="_blank" class="text-blue-500 hover:underline">NPTEL Linear
-													Algebra by Gilbert Strang (MIT)</a></li>
-											<li><a href="https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/"
+											<li>LA :<a href="https://www.youtube.com/playlist?list=PL49CF3715CB9EF31D"
+													target="_blank" class="text-blue-500 hover:underline">Khan Academy
+													Linear Algebra </a></li>
+											<li>CALC(1) : <a href="https://www.youtube.com/playlist?list=PL590CCC2BC5AF3BC1"
+													target="_blank" class="text-blue-500 hover:underline">MIT
+													OpenCourseware - Single variable Calculus (18.01)</a></li>
+											<li>CALC(2) : <a href="https://www.youtube.com/playlist?list=PL4C4C8A7D06566F38"
 													target="_blank" class="text-blue-500 hover:underline">MIT
 													OpenCourseware - Multivariable Calculus (18.02)</a></li>
-											<li><a href="https://www.khanacademy.org/math/multivariable-calculus"
+											<li>PROB : <a href="https://www.youtube.com/playlist?list=PLl8XY7QVSa4aUyZAtL2Hlf_mx3LaSix9B"
+													target="_blank" class="text-blue-500 hover:underline">MIT
+													OpenCourseware - Probability and Stats </a></li> 	
+											<li>LA :<a href="https://www.youtube.com/playlist?list=PLl-gb0E4MII03hiCrZa7YqxUMEeEPmZqK"
+													target="_blank" class="text-blue-500 hover:underline"> Linear Algebra (Entire Course) - Kimberly Brehm</a></li>
+											<li>CALC 1 :<a href="https://www.youtube.com/playlist?list=PLl-gb0E4MII1ml6mys-RXoQ0O3GfwBPVM"
+													target="_blank" class="text-blue-500 hover:underline">Calculus 1
+													- Kimberly Brehm</a></li>
+											<li>CALC 2 :<a href="https://www.youtube.com/playlist?list=PLl-gb0E4MII1OxI-BbNkEhuwPHcKxuPSg"
+													target="_blank" class="text-blue-500 hover:underline">Calculus 2
+													- Kimberly Brehm</a></li>
+											<li>CALC :<a href="https://www.khanacademy.org/math/multivariable-calculus"
 													target="_blank" class="text-blue-500 hover:underline">Khan Academy
 													Multivariable Calculus</a></li>
+											<li>PROB :<a href="https://www.youtube.com/playlist?list=PLC58778F28211FA19"
+													target="_blank" class="text-blue-500 hover:underline">Khan Academy
+													Probability</a></li>
+											<li>STATS :<a href="https://www.youtube.com/playlist?list=PL0o_zxa4K1BVsziIRdfv4Hl4UIqDZhXWV"
+													target="_blank" class="text-blue-500 hover:underline">Stats - 
+													The Organic chemistry tutor</a></li>
 										</ul>
 
 										<!-- Digital Logic -->
@@ -1068,14 +1108,15 @@
 									</div>
 									<br>
 									<br>
+									<br>
 									<p> NOTE : courses in youtube are older by Ravindrababu Ravula and GATE SMASHERS,
-										and also I personally found mistakes in classes, so please refer to books after
+										and also I personally found mistakes in these videos, so please refer to books after
 										each topic and cross check your understanding and their teaching if you want to
 										follow those courses. watch the misconceptions playlist in goclasses youtube
-										channel for some mistakes which are corrected by them. </p>
+										channel for some mistakes which are corrected by them. I follwed MIT and NPTEL Courses I mentinoed above while my preparation, for engineering maths Prof. Kimberly's Videos helped me understand entire LA in just 2 days in last stage of my preparation. so, trust these NPTEL/MIT/Prof videos rather than beliving some beginner in teaching, I would strongly recommend to try out differnt playlists and check yourself which teaching method is prefered. Also note that no topper prepares from a single source if he/she wants to develop knowledge rather than solving a problem. so keep your resources such as books and lectures and follow them, cross check, verify and learn !  </p>
 									<br>
 									<br>
-									<p> Watch these only if you cant understand NPTEL videos</p>
+									<p> Watch these only if you can't understand MIT / NPTEL / Prof videos. (NOT RECOMMENDED IF YOU WANT TO BE AT TOP IN GATE, but useful to score average marks around 50)</p>
 									<br>
 									<h1 class="text-3xl font-bold mb-8">GATE CSE Suggested Video Playlists</h1>
 									<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -1320,23 +1361,24 @@
 										<summary class="py-2 outline-none cursor-pointer focus:underline">Why should I
 											trust you? to take goclasses than PW course is less in price.</summary>
 										<div class="px-4 pb-4">
-											<p>I am not forcing you to take GO Classes over PW, but what I fell is GO
-												Classes is the best of all coachings out there currently, most of the
-												toppers do agree with me and you can see their records in ranks this and
-												previous year. I am not saying to take it since they generated ranks,
+											<p>I am not forcing you to take GO Classes over PW, infact I would recommend NPTEL / MIT videos for most of the subjects since it is way smaller and on point and purely knowledge from great professors, but what I felt is GO Classes is the best of all coachings out there currently, most of the
+												toppers do agree with me and you can see their records in ranks this and previous year. I am not saying to take it since they generated ranks,
 												rather try thier <a
 													herf="https://www.goclasses.in/courses/Discrete-Mathematics-Course-63f9aa9be4b0a8a370cfb0ad?affCode=R1LF5P">DM</a>,
 												<a
 													href="https://www.goclasses.in/courses/Engineering-Mathematics-60fdd8530cf2c7989e1f109d?affCode=R1LF5P">EM</a>
 												and <a
 													href="https://www.goclasses.in/courses/C-Programming-621a02a60cf242311be950a4?affCode=R1LF5P">
-													C Programming </a> Free courses before buying original and decide if
-												you are really understanding it. </p>
+													C Programming </a> Free courses before buying original and decide if you are really understanding it. also try NPTEL / MIT videos, if you can understand them you dont need a coaching at all ! You can preapre on your own, and save money :P </p>
 										</div>
 									</details>
 								</div>
 							</div>
 							<!-- </section> -->
+
+							<br>
+							<br>
+							<p> Didn't answered your question yet ? Ask me here : </p>
 							<br>
 							<br>
 							<br>
