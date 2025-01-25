@@ -1,0 +1,312 @@
+
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>AI Time Line - Mahanth Yalla</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/tailwind.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <!-- <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f5f5f5;
+            }
+    
+            .timeline {
+                position: relative;
+                margin: 50px auto;
+                padding: 0;
+                width: 90%;
+                max-width: 1000px;
+            }
+    
+            .timeline::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 50%;
+                width: 4px;
+                background: #333;
+                transform: translateX(-50%);
+            }
+    
+            .event {
+                position: relative;
+                margin: 20px 0;
+                width: 50%;
+                padding: 15px;
+                background: #fff;
+                border-radius: 8px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            }
+    
+            .event::after {
+                content: '';
+                position: absolute;
+                top: 15px;
+                width: 12px;
+                height: 12px;
+                background: #333;
+                border-radius: 50%;
+            }
+    
+            .event-left {
+                left: 0;
+                text-align: right;
+            }
+    
+            .event-left::after {
+                right: -6px;
+            }
+    
+            .event-right {
+                left: 50%;
+                text-align: left;
+            }
+    
+            .event-right::after {
+                left: -6px;
+            }
+    
+            h3 {
+                margin: 0;
+                color: #333;
+            }
+    
+            p {
+                margin: 5px 0 0;
+                color: #666;
+            }
+    
+            .event:nth-child(even) {
+                transform: translateX(-100%);
+            }
+        </style> -->
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f5f5f5;
+            }
+    
+            .timeline {
+                position: relative;
+                margin: 50px auto;
+                padding: 0;
+                width: 90%;
+                max-width: 1000px;
+            }
+    
+            .timeline::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 50%;
+                width: 4px;
+                background: #333;
+                transform: translateX(-50%);
+            }
+    
+            .event {
+                position: relative;
+                margin: 20px 0;
+                width: 45%;
+                padding: 15px;
+                
+            }
+    
+            .event::after {
+                content: '';
+                position: absolute;
+                top: 15px;
+                width: 12px;
+                height: 12px;
+                background: #111;
+                border-radius: 50%;
+            }
+    
+            .event-left {
+                left: 0;
+                text-align: right;
+            }
+    
+            .event-left::after {
+                right: -56px;
+            }
+    
+            .event-right {
+                left:100%;
+                text-align: left;
+            }
+    
+            .event-right::after {
+                left: -56px;
+            }
+    
+            h3 {
+                margin: 0;
+                color: #eee;
+            }
+    
+            p {
+                margin: 5px 0 0;
+                color: #ccc;
+            }
+    
+            .event:nth-child(even) {
+                transform: translateX(-100%);
+            }
+
+            .cv {
+                color: #afef3f;
+            }
+            .optim {
+                color: #f3af3f;
+            }
+            .ai {
+                color: #3fafef;
+            }
+            .deepl {
+                color: #3ff3af;
+            }
+
+        </style>
+    </head>
+	<body class="landing is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">Mahanth Yalla</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<!-- <li><a href="edu.html">Technical</a></li> -->
+											<li><a href="proj.html">Projects</a></li>
+											<li><a href="about.html">About me</a></li>
+											<li><a href="mailto:mahanth@duck.com">Contact me</a></li>
+											<li><a href="timeline.html">AI Time Line</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>Time Line - Historical events</h2>
+						</header>
+                        <div class="timeline">
+                            <!-- Computer Vision Timeline -->
+                            <div class="event event-left">
+                                <h3 class="deepl"> AlexNet - <b class="deepl">2012</b> </h3>
+                                <p>Breakthrough in deep learning for image classification. Won ImageNet competition.</p>
+                            </div>
+                    
+                            <div class="event event-right">
+                                <h3 class="optim"><b class="optim">2013</b> - RMSProp</h3>
+                                <p>Proposed in Hinton's Coursera lectures. Improved gradient descent with adaptive learning rates.</p>
+                            </div>
+                    
+                            <div class="event event-left">
+                                <h3 class="deepl">VGGNet - <b class="deepl">2014</b> </h3>
+                                <p>Introduced deeper architectures using smaller kernels (3×3).</p>
+                            </div>
+                    
+                            <div class="event event-right">
+                                <h3 class="optim"> <b class="optim" >2014 </b>- Adam Optimizer</h3>
+                                <p>Kingma and Ba proposed Adam, combining momentum and adaptive learning rates.</p>
+                            </div>
+                    
+                            <div class="event event-left">
+                                <h3 class="deepl">ResNet - <b class="deepl">2015</b></h3>
+                                <p>Introduced skip connections to train very deep networks effectively.</p>
+                            </div>
+                    
+                            <div class="event event-right">
+                                <h3 class="optim"><b class="optim" >2015</b> - Batch Normalization</h3>
+                                <p>Normalized layer activations to improve convergence.</p>
+                            </div>
+                    
+                            <div class="event event-left">
+                                <!-- <h4 style="color:#afef3f">Transformers<b> - 2017</b></h4> -->
+                                <h4 class="ai">Transformers - <b class="ai"> 2017</b></h4>
+                                <p>Attention is All You Need. Introduced attention mechanisms that revolutionized NLP and CV.</p>
+                            </div>
+                    
+                            <div class="event event-right">
+                                <h3 class="optim"><b class="optim" >2017</b> - AdamW</h3>
+                                <p>Decoupled weight decay regularization for improved optimization in deep networks.</p>
+                            </div>
+                    
+                            <div class="event event-left">
+                                <h3 class="deepl">EfficientNet <b class="deepl">2019</b></h3>
+                                <p>Scaled models systematically with compound scaling, achieving state-of-the-art results.</p>
+                            </div>
+                    
+                            <div class="event event-right">
+                                <h3 class="optim"><b class="optim" >2019</b> - RAdam</h3>
+                                <p>Rectified Adam to stabilize training during warm-up phases.</p>
+                            </div>
+                    
+                            <div class="event event-left">
+                                <h3 class="deepl">Vision Transformers - <b class="deepl">2021</b></h3>
+                                <p>Used transformers for image processing, achieving remarkable results without CNNs.</p>
+                            </div>
+                    
+                            <div class="event event-right">
+                                <h3 class="optim"><b class="optim" >2023</b> - Lion Optimizer</h3>
+                                <p>Introduced by symbolic discovery, using momentum with sign-based updates.</p>
+                            </div>
+                        </div>
+
+                            
+					</article> 
+
+				<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="https://twitter.com/mahanth_maha" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://www.instagram.com/mahanth_maha" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://www.github.com/mahanth-maha" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.linkedin.com/in/mahanth-maha/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+						<li><a href="mailto:mahanth@duck.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; MAHA</li>
+					</ul>
+				</footer>
+
+		</div>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+</body>
+</html>
